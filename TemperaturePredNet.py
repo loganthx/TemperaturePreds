@@ -35,7 +35,7 @@ class Net(nn.Module):
 		self.conv1 = nn.Conv2d(img_channels, sequence_channels[0], 3, padding=1)
 		self.conv2 = nn.Conv2d(sequence_channels[0], img_channels, 1)
 
-		for n, r_dim in enumerate(representation_dims):
+		for n in range(len(representation_dims)):
 			if n == 0:
 				setattr(self, f"finalconv{n+1}", nn.Conv2d(img_channels, representation_dims[n]*img_channels, kernel_size=4, stride=4))
 			else:
