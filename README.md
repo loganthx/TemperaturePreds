@@ -7,4 +7,4 @@ TemperaturePreds works on liquid crystals for low dataset len
 
 ![](plots/epoch_score_graph.png)
 
-![](plots/val_score_graph.png)
+
